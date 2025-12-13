@@ -10,6 +10,7 @@ pipeline {
 
         stage('Manual Approval for Prod') {
             steps {
+                // Timeout diatur selama 15 menit
                 timeout(time: 15, unit: 'MINUTES') {
                     input(
                         message: "PERHATIAN: Apakah Anda yakin ingin melakukan Deployment ke Production?",
@@ -24,7 +25,7 @@ pipeline {
         stage('Production Deployment') {
             steps {
                 echo 'Tahap 3: Deployment ke Production disetujui dan dimulai!'
-                // PERUBAHAN KRITIS: Menggunakan 'bat' untuk kompatibilitas Windows
+                // PERBAIKAN: Menggunakan 'bat' untuk kompatibilitas Windows
                 bat 'echo %DATE% %TIME%' 
                 echo 'Deployment selesai.'
             }
