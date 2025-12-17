@@ -1,1 +1,1 @@
-Saya belajar Git, ini isi file2.txt
+Saya sedang belajar Git dan mencoba mengubah isi file2.txt.
