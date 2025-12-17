@@ -1,1 +1,0 @@
-Saya sedang belajar Git dan mencoba mengubah isi file2.txt.
