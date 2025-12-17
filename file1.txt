@@ -1,0 +1,1 @@
+Ini adalah isi awal file1.txt untuk latihan Git.
